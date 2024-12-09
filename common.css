@@ -1,0 +1,145 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html, body {
+    height: 100%;
+    overflow: hidden; /* 隐藏滚动条，如果需要滚动可以移除这行 */
+}
+ 
+body {
+    display: flex;
+    flex-direction: column; /* 使用列方向布局 */
+    justify-content: space-between; /* 在列之间分配空间 */
+    align-items: center; /* 垂直居中 */
+    background-color: #f0f0f0; /* 背景色 */
+    background-image: url("/图片/图3.jpeg"); /* 背景图片，如果需要可以移除或调整 */
+    background-size: cover; /* 背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+}
+ 
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(51, 51, 51, 0.4);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 两端对齐 */
+    padding: 0 20px; /* 内边距，防止内容紧贴边缘 */
+    font-family: 幼圆;
+}
+ 
+.nav img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; /* 右侧外边距 */
+}
+ 
+.nav .spacer {
+    width: 0; /* 占位符，实际宽度为0 */
+    flex-grow: 1; /* 占据剩余空间 */
+}
+ 
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+ 
+.container {
+    display: flex;
+    width: 1000px;
+    flex-grow: 1; /* 占据剩余空间 */
+    justify-content: space-between; /* 两端对齐 */
+    align-items: stretch; /* 子元素高度拉伸至父元素高度 */
+    padding: 20px; /* 内边距 */
+}
+ 
+.container-left, .container-right {
+    display: flex;
+    flex-direction: column; /* 使用列方向布局 */
+    /* justify-content: center; 垂直居中 */
+}
+ 
+.container-left {
+    /* background-color: red; */
+    width: 200px;
+}
+ 
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+ 
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* 底部外边距 */
+}
+ 
+.card h3 {
+    margin-bottom: 10px; /* 底部外边距 */
+}
+ 
+.card a {
+    color: #777;
+    text-decoration: none;
+    margin-top: 10px; /* 顶部外边距 */
+    display: inline-block; /* 内联块级元素，保持文本居中对齐 */
+}
+ 
+.counter, .counter-value {
+    display: flex;
+    justify-content: space-around; /* 子元素均匀分布 */
+    margin-top: 10px; /* 顶部外边距 */
+}
+ 
+/* 图片轮播样式 */
+.carousel {
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* 外边距，自动水平居中 */
+}
+ 
+.carousel-inner {
+    display: flex;
+    animation: slide 10s infinite;
+}
+ 
+.carousel-inner img {
+    width: 100%;
+    border-radius: 10px;
+}
+ 
+@keyframes slide {
+    0%, 20% {
+        transform: translateX(0);
+    }
+    25%, 45% {
+        transform: translateX(-100%);
+    }
+    50%, 70% {
+        transform: translateX(-200%);
+    }
+    75%, 100% {
+        transform: translateX(-300%);
+    }
+}
+
+.container-right {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: calc(100% - 220px); 
+    border-radius: 10px;
+    overflow: auto;
+}

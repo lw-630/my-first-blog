@@ -1,0 +1,40 @@
+.blog{
+    width: 100%;
+    padding: 20px;
+}
+.blog .title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700px;
+    padding: 10px;
+}
+.blog .data{
+    text-align: center;
+    color: rgb(21, 203, 124);
+}
+.blog .desc{
+    /* 首行缩进2字符 */
+    text-indent: 2rem;
+    max-height: 100px; /* 你可以根据需要调整这个高度 */
+    overflow-y: auto; /* 当内容超出时，显示垂直滚动条 */
+    word-wrap: break-word; /* 确保长单词或URL也能正确换行 */
+}
+.blog a{
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    color: block;
+    background-color: rgb(176, 240, 219);
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+.blog a:hover{
+    color: white;
+    background-color: rgb(121, 250, 250);
+}

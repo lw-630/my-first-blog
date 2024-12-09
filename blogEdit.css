@@ -1,0 +1,36 @@
+#title{
+    margin: 5px;
+    height: 40px;
+    width: 895px;
+    border: none;
+    font-size: 22px;
+    border-radius: 10px;
+    padding-left: 5px;
+    outline: none;
+    background-color: rgb(255, 255, 255,0.7);
+}
+#title:focus{
+    background-color: rgb(255, 255, 255);
+}
+#submit{
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+#submit:active{
+    background-color: rgb(168, 166, 165);
+}
+.blog-edit .title{
+    height: 50px;
+    display: flex;
+}
+#editor{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    opacity: 80%;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="common1.css">
+    <link rel="stylesheet" href="blogEdit.css">
+    <script src="jquery.js"></script>
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="/editor/editor.md-master/css/editormd.min.css">
+    <script src="/editor/editor.md-master/lib/marked.min.js"></script>
+    <script src="/editor/editor.md-master/lib/prettify.min.js"></script>
+    <script src="/editor/editor.md-master/editormd.min.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <img src="/图片/头像.jpg" alt="头像">
+        <span class="title">我的博客</span>
+        <div class="spacer"></div>
+        <a href="/登录页面.html">登录</a>
+        <a href="/博客主页.html">主页</a>
+        <a href="/博客编辑页.html">写博客</a>
+        <a href="#">注销</a>
+    </div>
+    <div class="blog-edit">
+        <div class="title">
+            <input type="text" id="title">
+            <button id="submit">发布文章</button>
+        </div>
+        <div id="editor">
+
+        </div>
+    </div>
+    <script>
+        let editor = editormd("editor", {
+            width:"100%",
+            height:"calc(90vh - 50px)",
+            markdown:"# 在这里写博客",
+            path:"/editor/editor.md-master/lib/"
+        })
+    </script>
+</body>
+</html>

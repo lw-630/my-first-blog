@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="blogList.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="/图片/头像.jpg" alt="头像">
+        <span class="title">我的博客</span>
+        <div class="spacer"></div>
+        <a href="/登录页面.html" onclick="return handleLinkClick(this, 'login.html');">登录</a>
+        <a href="/博客主页.html" onclick="return handleLinkClick(this, 'login.html');">主页</a>
+        <a href="/博客编辑页.html" onclick="return handleLinkClick(this, 'login.html');">写博客</a>
+        <a href="#">注销</a>
+    </div>
+    <!-- <div class="carousel">
+        <div class="carousel-inner">
+            <img src="/图片/图1.jpg" alt="Image 1">
+            <img src="/图片/图2.png" alt="Image 2">
+            <img src="/图片/图3.jpeg" alt="Image 3">
+            <img src="/图片/图4.png" alt="">
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="container-left">
+            <div class="card">
+                <img src="/图片/头像2.jpg" alt="用户头像">
+                <h3>LW</h3>
+                <a href="#">Gitee 地址</a>
+                <div class="counter">
+                    <span>文章数</span>
+                    <span>1</span>
+                </div>
+                <!-- <div class="counter-value">
+                    <span>1</span>
+                    <span>0</span>
+                </div> -->
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="blog">
+                <div class="title">我的第一篇博客</div>
+                <div class="data">2024-12-7</div>
+                <div class="desc">认真学前端</div>
+                <a href="/博客详情页.html">查看全文 &gt;&gt;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
